@@ -4,8 +4,13 @@ using namespace std;
 
 int main(int argc, char** argv) {
 	cout << "Obliczanie miejsc zerowych" << endl;
-	float a=2;
-	float b=3;
+	float a;
+	float b;
+	cout << "Podaj a"<<endl;
+	cin >> a;
+	cout << "Podaj b"<<endl;
+	cin >> b;
+	cout << "Wynik"<<endl;
 	float x=-b/a;
 	cout << x;
 	return 0;
