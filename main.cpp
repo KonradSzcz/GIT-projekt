@@ -10,8 +10,14 @@ int main(int argc, char** argv) {
 	cin >> a;
 	cout << "Podaj b"<<endl;
 	cin >> b;
-	cout << "Wynik"<<endl;
-	float x=-b/a;
-	cout << x;
+	
+	if (a!=0){
+		cout << "Wynik"<<endl;
+		float x=-b/a;
+		cout << x;
+	}
+	else {
+		cout << "a nie moze miec wartosci 0";
+	}
 	return 0;
 }
