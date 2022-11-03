@@ -81,7 +81,7 @@ else if (funkcja == 2) {
 			}
 		else if (delta ==0){
 			x1=-b/(2*a);
-			cout << "Miejsce zerowe"<<endl;
+			cout << "Jedno miejsce zerowe"<<endl;
 			cout << x1;
 		}
 		
