@@ -1,11 +1,12 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char** argv) {
-	float a,b,c;
+	float a,b,c,d,e,f,delta,x1,x2;
 	cout << "Wybierz postac funkcji"<<endl;
-	cout << "1 zwyk³a"<<endl<<"2 kanoniczna"<<endl;
+	cout << "1 zwyk³a"<<endl<<"2 ogolna"<<endl;
 	int postac;
 	cin >> postac;
 	if ( postac==1){
@@ -43,5 +44,19 @@ int main(int argc, char** argv) {
 			cout << "Niesokonczenie wiele miejsc";
 		}
 	}
+	cout << "Funkcja kwadratowa";
+		cout << "Podaj a"<<endl;
+		cin >> d;
+		cout << "Podaj b"<<endl;
+		cin >> e;
+		cout << "Podaj c"<<endl;
+		cin >> f;
+		delta = e*e-(4*d*f);
+		float delta1 = sqrt(delta);
+		cout << "Miejsca zerowe"<<endl;
+		x1=(-b-delta1)/(2*a);
+		x2=(-b+delta1)/(2*a);
+		cout << "x1:"<<x1<<" , "<<"x2:"<<x2;
+		
 	return 0;
 }
