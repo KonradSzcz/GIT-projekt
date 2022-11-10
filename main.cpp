@@ -14,12 +14,12 @@ int main(int argc, char** argv) {
 	if (funkcja == 1){
 		
 	cout << "Wybierz postac funkcj i"<<endl;
-	cout << "1 zwyk³a"<<endl<<"2 ogolna "<<endl;
+	cout << "1 zwyk³a"<<endl<<"2 ogolna"<<endl;
 	int postac;
 	cin >> postac;
 	if ( postac==1){
 
-	cout << "Obliczanie miejsc zerowych " << endl;
+	cout << "Obliczanie miejsc zerowych" << endl;
 
 	cout << "Podaj a"<<endl;
 	cin >> a;
