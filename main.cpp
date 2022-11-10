@@ -4,7 +4,7 @@ using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char** argv) {
-	float a,b,c,delta,x1,x2;
+	float a,b,c,delta,x1,x2,q,p;
 	
 	
 	int funkcja;
@@ -86,9 +86,37 @@ else if (funkcja == 2) {
 		}
 		
 		else if (delta < 0) {
+			cout << "Brak" << endl;
+		}
+		}
+	//dsadasd
+		cout << "Podaj p"<<endl;
+		cin >> p;
+		cout << "Podaj q"<<endl;
+		cin >> q;
+		cout << "Podaj a"<<endl;
+		cin >> a;
+		
+		b=-((2*a)*p);
+		
+		delta = -((4*a)*q);
+		if (delta > 0 ){
+	
+		float delta1 = sqrt(delta);
+		cout << "Miejsca zerowe"<<endl;
+		x1=(-b-delta1)/(2*a);
+		x2=(-b+delta1)/(2*a);
+		cout << "x1:"<<x1<<" , "<<"x2:"<<x2;
+			}
+		else if (delta ==0){
+			x1=-b/(2*a);
+			cout << "Jedno miejsce zerowe"<<endl;
+			cout << x1;
+		}
+		
+		else if (delta < 0) {
 			cout << "Brak";
-		}			
-}	
 }
 	return 0;
+}
 }
