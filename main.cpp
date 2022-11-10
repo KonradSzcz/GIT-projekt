@@ -5,14 +5,14 @@ using namespace std;
 
 int main(int argc, char** argv) {
 	float a,b,c,delta,x1,x2,q,p;
-	
-	
+
+
 	int funkcja;
 	cout << "Wybierz funkcje"<<endl;
 	cout << "1 liniowa"<<endl<<"2 kwadratowa "<<endl;
 	cin >> funkcja;
 	if (funkcja == 1){
-		
+
 	cout << "Wybierz postac funkcj i"<<endl;
 	cout << "1 zwyk³a"<<endl<<"2 ogolna "<<endl;
 	int postac;
@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
 	cin >> a;
 	cout << "Podaj b"<<endl;
 	cin >> b;
-	
+
 	if (a!=0){
 		cout << "Wynik"<<endl;
 		float x=-b/a;
@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
 	}
 	else {
 		cout << "a nie moze miec wartosci 0 gdy b=/=0";
-	}	
+	}
 	}
 	else if (postac == 2){
 		cout << "Podaj a"<<endl;
@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
 		cout << "Podaj c"<<endl;
 		cin >> c;
 		if (a!=0){
-		cout << "Miejsce zerowe to punkt ("<<a<<",0)";				
+		cout << "Miejsce zerowe to punkt ("<<a<<",0)";
 		}
 		else{
 			cout << "Niesokonczenie wiele miejsc";
@@ -54,10 +54,17 @@ int main(int argc, char** argv) {
 	}
 }
 else if (funkcja == 2) {
-	
 
-	cout << "Funkcja kwadratowa"<<endl;		
-		cout << "Podaj a"<<endl;
+
+	cout << "Funkcja kwadratowa"<<endl;
+	cout << "Wybierz postac funkcji: "<<endl;
+	cout << "1. ogolna "<<endl;
+	cout <<	"2. kanoniczna"<<endl;
+	int postac;
+	cin>>postac;
+if (postac == 1)
+{
+        cout << "Podaj a"<<endl;
 		cin >> a;
 		cout << "Podaj b"<<endl;
 		cin >> b;
@@ -72,7 +79,7 @@ else if (funkcja == 2) {
 
 		delta = b*b-(4*a*c);
 		if (delta > 0 ){
-	
+
 		float delta1 = sqrt(delta);
 		cout << "Miejsca zerowe"<<endl;
 		x1=(-b-delta1)/(2*a);
@@ -84,24 +91,27 @@ else if (funkcja == 2) {
 			cout << "Jedno miejsce zerowe"<<endl;
 			cout << x1;
 		}
-		
+
 		else if (delta < 0) {
 			cout << "Brak" << endl;
 		}
 		}
-	//dsadasd
-		cout << "Podaj p"<<endl;
+}
+
+else if (postac == 2)
+{
+    cout << "Podaj p"<<endl;
 		cin >> p;
 		cout << "Podaj q"<<endl;
 		cin >> q;
 		cout << "Podaj a"<<endl;
 		cin >> a;
-		
+
 		b=-((2*a)*p);
-		
+
 		delta = -((4*a)*q);
 		if (delta > 0 ){
-	
+
 		float delta1 = sqrt(delta);
 		cout << "Miejsca zerowe"<<endl;
 		x1=(-b-delta1)/(2*a);
@@ -113,9 +123,11 @@ else if (funkcja == 2) {
 			cout << "Jedno miejsce zerowe"<<endl;
 			cout << x1;
 		}
-		
+
 		else if (delta < 0) {
 			cout << "Brak";
+}
+
 }
 	return 0;
 }
