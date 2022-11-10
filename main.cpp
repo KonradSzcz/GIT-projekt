@@ -9,12 +9,12 @@ int main(int argc, char** argv) {
 	
 	int funkcja;
 	cout << "Wybierz funkcje"<<endl;
-	cout << "1 liniowa"<<endl<<"2 kwadratowa"<<endl;
+	cout << "1 liniowa"<<endl<<"2 kwadratowa "<<endl;
 	cin >> funkcja;
 	if (funkcja == 1){
 		
 	cout << "Wybierz postac funkcj i"<<endl;
-	cout << "1 zwyk³a"<<endl<<"2 ogolna"<<endl;
+	cout << "1 zwyk³a"<<endl<<"2 ogolna "<<endl;
 	int postac;
 	cin >> postac;
 	if ( postac==1){
